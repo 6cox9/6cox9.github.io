@@ -9,7 +9,7 @@ categories: media
 import requests
 
 # Real-time currency converter using ExchangeRate-API
-API_KEY = 'ebbe9b1e748f874c51f94302'  # Replace with your API key
+API_KEY = 'xxxxxxxxx'  # Replace with your API key
 BASE_URL = f'https://v6.exchangerate-api.com/v6/{API_KEY}/latest/'
 
 
