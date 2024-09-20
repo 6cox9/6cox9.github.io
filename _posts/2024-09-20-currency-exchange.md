@@ -6,10 +6,9 @@ categories: media
 ---
 
 # Real-Time Currency Converter
-
-<div align="center"">
-    <img src="https://github.com/6cox9/6cox9.github.io/blob/master/assets/spinning-money-transparent.gif"> 
-</div>
+<p align="center">
+<img src="https://github.com/6cox9/6cox9.github.io/blob/master/assets/spinning-money-transparent.gif"> 
+</p>
 
 This Python program uses the ExchangeRate-API to convert currencies in real time. It fetches supported currencies and exchange rates, allowing users to input amounts for conversion.
 
