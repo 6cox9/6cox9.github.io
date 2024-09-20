@@ -1,5 +1,5 @@
 ---
-title:  "Advanced examples"
+title:  "Python - Money Exchange"
 mathjax: true
 layout: post
 categories: media
