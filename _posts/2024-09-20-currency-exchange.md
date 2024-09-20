@@ -4,6 +4,11 @@ mathjax: true
 layout: post
 categories: media
 ---
+<div align="center">
+    
+<img src="../assets/images/spinning-money-transparent.gif" />
+
+</div>
 
 <div style="background-color: #1a1a2e; color: #EAECEE; padding: 20px; border-radius: 10px;">
     <p>This Python program uses the ExchangeRate-API to convert currencies in real time. It fetches supported currencies and exchange rates, allowing users to input amounts for conversion.</p>
