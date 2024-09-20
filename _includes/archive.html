@@ -1,10 +1,13 @@
-<article>
-  <header><h1>{{ include.title | default: page.title }}</h1></header>
-  <ul class="archive">
+<article style="background-color: #1a1a2e; color: #EAECEE; padding: 20px; border-radius: 10px;">
+  <header>
+    <h1 style="color: #76D7C4;">{{ include.title | default: page.title }}</h1>
+  </header>
+  <ul class="archive" style="list-style-type: none; padding: 0;">
     {% for post in site.posts %}
-    <li>
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <li style="border-bottom: 1px solid #2a2a3e; padding: 10px 0;">
+      <time datetime="{{ post.date | date_to_xmlschema }}" style="color: #85C1E9;">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <a href="{{ post.url | relative_url }}" style="color: #76D7C4; text-decoration: none; font-weight: bold;">{{ post.title }}</a>
+      <p style="margin: 5px 0; color: #EAECEE;">{{ post.excerpt | truncatewords: 20 }}</p>
     </li>
     {% endfor %}
   </ul>
