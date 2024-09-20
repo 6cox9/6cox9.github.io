@@ -24,5 +24,5 @@ def get_exchange_rate(from_currency, to_currency):
     # Implementation...
 ```
 
-You can find the full project in the repository:
+For the full code, please visit the repository:
 [Currency Exchange](https://github.com/6cox9/Python-CurrencyConvertor/)
