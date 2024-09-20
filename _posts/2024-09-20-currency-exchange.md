@@ -5,18 +5,18 @@ layout: post
 categories: media
 ---
 
-# Real-Time Currency Converter
-<div align="center">
-	<img src='../assets/images/spinning-money-transparent.gif' />
+<div style="background-color: #1a1a2e; color: #EAECEE; padding: 20px; border-radius: 10px;">
+    <p>This Python program uses the ExchangeRate-API to convert currencies in real time. It fetches supported currencies and exchange rates, allowing users to input amounts for conversion.</p>
+
+<h2 style="color: #76D7C4;">Key Features:</h2>
+    <ul style="list-style-type: none; padding: 0;">
+        <li style="color: #EAECEE;">Get a list of supported currencies</li>
+        <li style="color: #EAECEE;">Fetch real-time exchange rates</li>
+        <li style="color: #EAECEE;">Format currency amounts for better readability</li>
+        <li style="color: #EAECEE;">User-friendly interface for currency conversion</li>
+    </ul>
 </div>
 
-This Python program uses the ExchangeRate-API to convert currencies in real time. It fetches supported currencies and exchange rates, allowing users to input amounts for conversion.
-
-### Key Features:
-- Get a list of supported currencies
-- Fetch real-time exchange rates
-- Format currency amounts for better readability
-- User-friendly interface for currency conversion
 
 ```python
 def get_supported_currencies():
