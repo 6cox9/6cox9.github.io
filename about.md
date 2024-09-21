@@ -17,7 +17,7 @@ I specialize in:
 
 - **Python**: Building web applications with frameworks like **Flask** and **Django**.
 - **HTML & CSS**: Crafting responsive, cross-platform web pages with modern design principles.
-- <span style="color:#85C1E9;">Web Design & UX**</span>: Creating user-friendly, intuitive interfaces.
+- <span style="color:#85C1E9;">Web Design & UX</span>: Creating user-friendly, intuitive interfaces.
 - **Version Control**: Using **Git/GitHub** for collaborative and efficient development.
 
 ---
@@ -28,7 +28,7 @@ My legal studies allow me to bring a broader perspective to development:
 
 - **Data Privacy**: Ensuring applications are compliant with **GDPR** and **CCPA**.
 - **Intellectual Property**: Protecting code and digital assets through a solid understanding of software licensing.
-- <span style="color:#85C1E9;">Cybersecurity**</span>: Developing secure applications that adhere to legal and industry standards.
+- <span style="color:#85C1E9;">Cybersecurity</span>: Developing secure applications that adhere to legal and industry standards.
 
 ---
 
@@ -37,7 +37,3 @@ My legal studies allow me to bring a broader perspective to development:
 I aim to merge my skills in **Python**, **HTML**, and **CSS** with legal insight to create web solutions that are **innovative**, **compliant**, and **future-proof**. My goal is to build applications that are not only functional but also ethically and legally sound.
 
 **Let's connect** if you’re looking for a developer with a unique blend of tech and legal expertise, or if you're interested in collaborating on projects that sit at the intersection of **web development** and **law**.
-
-
-
-
