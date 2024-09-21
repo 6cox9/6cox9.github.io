@@ -1,6 +1,6 @@
 ---
 layout: page
-title: <span style="color:#EAECEE;">"About Me"</span>
+title: "About Me"
 ---
 
 I'm a **passionate** <span style="color:#76D7C4;">Python and web developer</span> with expertise in **Python**, **HTML**, and **CSS**. My focus is on building scalable, efficient, and user-friendly web applications. With an eye for clean code and modern design, I aim to deliver seamless, responsive web experiences.
