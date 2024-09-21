@@ -1,6 +1,6 @@
 ---
 layout: page
-title: " "
+title: "About"
 ---
 
 # <span style="color:#EAECEE;">About Me</span>
