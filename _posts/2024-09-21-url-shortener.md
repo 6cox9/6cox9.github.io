@@ -40,4 +40,4 @@ def redirect_url(short_url):
     """Redirect to the original URL."""
     # Implementation...
 ```
-<div style="background-color: #1a1a2e; color: #EAECEE; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);"> <p style="font-size: 1.1em; text-align: center;"> For the full code, please visit the repository: <a href="https://github.com/6cox9/Python-UrlShortener" target="_blank" style="color: #76D7C4; text-decoration: none; font-weight: bold;">URL Shortener</a> </p> </div>
+<div style="background-color: #1a1a2e; color: #EAECEE; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);"> <p style="font-size: 1.1em; text-align: center;"> For the full code, please visit the repository: <a href="https://github.com/6cox9/url-shortener" target="_blank" style="color: #76D7C4; text-decoration: none; font-weight: bold;">URL Shortener</a> </p> </div>
