@@ -41,10 +41,10 @@ def get_exchange_rate(from_currency, to_currency):
     """Fetch real-time exchange rate between two currencies."""
     # Implementation...
 ```
-
-<div style="max-width: 2000px; margin: 0 auto; background-color: #1a1a2e; color: #EAECEE; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); text-align: center;">
-    <p style="font-size: 1.1em;">
+<div style="background-color: #1a1a2e; color: #EAECEE; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+    <p style="font-size: 1.1em; text-align: center;">
         For the full code, please visit the repository: 
         <a href="https://github.com/6cox9/Python-CurrencyConvertor/" target="_blank" style="color: #76D7C4; text-decoration: none; font-weight: bold;">Currency Exchange</a>
     </p>
 </div>
+
