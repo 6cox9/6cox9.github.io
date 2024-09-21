@@ -6,7 +6,7 @@ categories: media
 ---
 
 <div align="center">
-    <img src="../assets/images/url-shortener.gif" alt="URL Shortener GIF" />
+    <img src="../assets/images/link.gif" alt="URL Shortener GIF" />
 </div>
 
 <div style="background-color: #1a1a2e; color: #EAECEE; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
