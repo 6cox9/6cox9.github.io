@@ -1,63 +1,43 @@
 ---
-title:  "Advanced examples"
+title: "Python - URL Shortener"
 mathjax: true
 layout: post
 categories: media
 ---
 
-![Swiss Alps](https://user-images.githubusercontent.com/4943215/55412536-edbba180-5567-11e9-9c70-6d33bca3f8ed.jpg)
+<div align="center">
+    <img src="../assets/images/url-shortener.gif" alt="URL Shortener GIF" />
+</div>
 
+<div style="background-color: #1a1a2e; color: #EAECEE; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+    <h2 style="margin-top: 0; font-size: 1.8em; color: #76D7C4; border-bottom: 2px solid #76D7C4; padding-bottom: 10px;">URL Shortener</h2>
+    <p style="line-height: 1.6; font-size: 1.1em;">This Python web application allows users to shorten long URLs into easy-to-share links. It uses a simple interface to input URLs and generate shortened versions stored in a SQLite database.</p>
 
-## MathJax
+ <h3 style="color: #76D7C4; margin-top: 20px;">Key Features:</h3>
+    <ul style="list-style-type: none; padding: 0;">
+        <li style="color: #EAECEE; font-size: 1.1em; padding: 5px 0; position: relative;">
+            <span style="color: #76D7C4;">✔️</span> Shorten any valid URL
+        </li>
+        <li style="color: #EAECEE; font-size: 1.1em; padding: 5px 0; position: relative;">
+            <span style="color: #76D7C4;">✔️</span> User-friendly interface
+        </li>
+        <li style="color: #EAECEE; font-size: 1.1em; padding: 5px 0; position: relative;">
+            <span style="color: #76D7C4;">✔️</span> Redirect to original URLs seamlessly
+        </li>
+        <li style="color: #EAECEE; font-size: 1.1em; padding: 5px 0; position: relative;">
+            <span style="color: #76D7C4;">✔️</span> Easy to use and deploy
+        </li>
+    </ul>
+</div>
 
-You can enable MathJax by setting `mathjax: true` on a page or globally in the `_config.yml`. Some examples:
+```python
+def generate_short_url():
+    """Generate a random short URL."""
+    # Implementation...
 
-[Euler's formula](https://en.wikipedia.org/wiki/Euler%27s_formula) relates the  complex exponential function to the trigonometric functions.
-
-$$ e^{i\theta}=\cos(\theta)+i\sin(\theta) $$
-
-The [Euler-Lagrange](https://en.wikipedia.org/wiki/Lagrangian_mechanics) differential equation is the fundamental equation of calculus of variations.
-
-$$ \frac{\mathrm{d}}{\mathrm{d}t} \left ( \frac{\partial L}{\partial \dot{q}} \right ) = \frac{\partial L}{\partial q} $$
-
-The [Schrödinger equation](https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation) describes how the quantum state of a quantum system changes with time.
-
-$$ i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \left [ \frac{-\hbar^2}{2\mu}\nabla^2 + V(\mathbf{r},t)\right ] \Psi(\mathbf{r},t) $$
-
-## Code
-
-Embed code by putting `{{ "{% highlight language " }}%}` `{{ "{% endhighlight " }}%}` blocks around it. Adding the parameter `linenos` will show source lines besides the code.
-
-{% highlight c %}
-
-static void asyncEnabled(Dict* args, void* vAdmin, String* txid, struct Allocator* requestAlloc)
-{
-    struct Admin* admin = Identity_check((struct Admin*) vAdmin);
-    int64_t enabled = admin->asyncEnabled;
-    Dict d = Dict_CONST(String_CONST("asyncEnabled"), Int_OBJ(enabled), NULL);
-    Admin_sendMessage(&d, txid, admin);
-}
-
-{% endhighlight %}
-
-## Gists
-
-With the `jekyll-gist` plugin, which is preinstalled on Github Pages, you can embed gists simply by using the `gist` command:
-
-<script src="https://gist.github.com/5555251.js?file=gist.md"></script>
-
-## Images
-
-Upload an image to the *assets* folder and embed it with `![title](/assets/name.jpg))`. Keep in mind that the path needs to be adjusted if Jekyll is run inside a subfolder.
-
-A wrapper `div` with the class `large` can be used to increase the width of an image or iframe.
-
-![Flower](https://user-images.githubusercontent.com/4943215/55412447-bcdb6c80-5567-11e9-8d12-b1e35fd5e50c.jpg)
-
-[Flower](https://unsplash.com/photos/iGrsa9rL11o) by Tj Holowaychuk
-
-## Embedded content
-
-You can also embed a lot of stuff, for example from YouTube, using the `embed.html` include.
-
-{% include embed.html url="https://www.youtube.com/embed/_C0A5zX-iqM" %}
+@app.route('/<short_url>')
+def redirect_url(short_url):
+    """Redirect to the original URL."""
+    # Implementation...
+```
+<div style="background-color: #1a1a2e; color: #EAECEE; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);"> <p style="font-size: 1.1em; text-align: center;"> For the full code, please visit the repository: <a href="https://github.com/6cox9/Python-UrlShortener" target="_blank" style="color: #76D7C4; text-decoration: none; font-weight: bold;">URL Shortener</a> </p> </div>
