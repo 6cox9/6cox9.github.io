@@ -1,44 +1,137 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-<title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
-<meta charset="{{ site.encoding }}">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="{{ page.author | default: site.author | escape }}">
-<meta name="generator" content="Jekyll v{{ jekyll.version }}">
-<link rel="canonical" href="{{ page.url | absolute_url }}">
-{% if site.show_frame %}
-<link rel="stylesheet" href="{{ "/assets/css/frame.css" | relative_url }}">
-{% else %}
-<link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
-{% endif %}
-{% if site.plugins contains "jekyll-feed" %}<link rel="alternate" href="{{ site.feed.path | default: "/feed.xml" | relative_url }}" type="application/atom+xml" title="{{ site.title }}">{% endif %}
-{% if page.mathjax or site.mathjax %}
-<link rel="stylesheet" href="{{ "/assets/katex/katex.min.css" | relative_url }}">
-<script defer src="{{ "/assets/katex/katex.min.js" | relative_url }}"></script>
-<script defer src="{{ "/assets/katex/contrib/auto-render.min.js" | relative_url }}" onload="renderMathInElement(document.body)"></script>
-{% endif %}
-{% if site.comments.disqus_shortname and page.layout == "post" %}<script src="//{{ site.comments.disqus_shortname }}.disqus.com/embed.js" async></script>{% endif %}
-{% if site.comments.isso_domain and page.layout == "post" %}<script data-isso="http://{{ site.comments.isso_domain }}" src="//{{ site.comments.isso_domain }}/js/embed.min.js"></script>{% endif %}
-{% if site.show_sidebar or site.sidebar %}{% include sidebar.html %}{% endif %}
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
-{% if site.navigation %}
-  {% assign pages = site.navigation %}
-{% else %}
-  {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
-{% endif %}
+<head>
+  <meta charset="{{ site.encoding }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="{{ page.author | default: site.author | escape }}">
+  <meta name="generator" content="Jekyll v{{ jekyll.version }}">
+  <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+  
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
 
-<header>
-  <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
-  {% include menu.html menu=pages %}
-</header>
+  {% if site.plugins contains "jekyll-feed" %}
+  <link rel="alternate" href="{{ site.feed.path | default: "/feed.xml" | relative_url }}" type="application/atom+xml" title="{{ site.title }}">
+  {% endif %}
 
-{{ content }}
+  {% if page.mathjax or site.mathjax %}
+  <link rel="stylesheet" href="{{ "/assets/katex/katex.min.css" | relative_url }}">
+  <script defer src="{{ "/assets/katex/katex.min.js" | relative_url }}"></script>
+  <script defer src="{{ "/assets/katex/contrib/auto-render.min.js" | relative_url }}" onload="renderMathInElement(document.body)"></script>
+  {% endif %}
 
-{% if site.external %}
-<footer>
-  <div>{{ site.description | default: site.title }}</div>
-  {% include menu.html menu=site.external %}
-</footer>
-{% endif %}
+  {% if site.comments.disqus_shortname and page.layout == "post" %}
+  <script src="//{{ site.comments.disqus_shortname }}.disqus.com/embed.js" async></script>
+  {% endif %}
+
+  {% if site.comments.isso_domain and page.layout == "post" %}
+  <script data-isso="http://{{ site.comments.isso_domain }}" src="//{{ site.comments.isso_domain }}/js/embed.min.js"></script>
+  {% endif %}
+
+  <style>
+    /* General Styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #1a1a2e;
+      color: #EAECEE;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #76D7C4;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #0F3460;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    header .title {
+      font-size: 2em;
+      color: #EAECEE;
+      font-weight: bold;
+    }
+
+    /* Navigation Menu */
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #85C1E9;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    /* Main Content */
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #0F3460;
+      padding: 20px;
+      text-align: center;
+      color: #EAECEE;
+      font-size: 0.9em;
+      box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    footer a {
+      margin: 0 10px;
+      color: #76D7C4;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+      header .title {
+        font-size: 1.5em;
+      }
+
+      nav a {
+        margin: 0 10px;
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="{{ '/' | relative_url }}" class="title">{{ site.title | escape }}</a>
+    <nav>
+      {% include menu.html menu=pages %}
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  {% if site.external %}
+  <footer>
+    <div>{{ site.description | default: site.title }}</div>
+    <nav>
+      {% include menu.html menu=site.external %}
+    </nav>
+  </footer>
+  {% endif %}
+
+</body>
 
 </html>
