@@ -20,7 +20,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "about.md", title: "About me"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Github, icon: github, url: "<a href='https://github.com/6cox9' target='_blank'>Github</a>"}
+  - {title: Github, icon: github, url: "https://github.com/6cox9"}
 
  
 comments:
