@@ -31,8 +31,7 @@ categories: media
     </ul>
 </div>
 
-```
-python
+```python
 def get_supported_currencies():
     """Get a list of supported currencies from the API."""
     # Implementation...
