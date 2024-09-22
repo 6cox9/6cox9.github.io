@@ -31,7 +31,7 @@ categories: media
     </ul>
 </div>
 
-
+```
 python
 def get_supported_currencies():
     """Get a list of supported currencies from the API."""
@@ -40,7 +40,7 @@ def get_supported_currencies():
 def get_exchange_rate(from_currency, to_currency):
     """Fetch real-time exchange rate between two currencies."""
     # Implementation...
-
+```
 <div style="background-color: #1a1a2e; color: #EAECEE; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
     <p style="font-size: 1.1em; text-align: center;">
         For the full code, please visit the repository: 
