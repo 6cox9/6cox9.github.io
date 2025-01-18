@@ -1,99 +1,40 @@
----
-title: "About"
-permalink: "/about/"
-layout: page
----
+# Alexandru's Portfolio  
 
-## Installation
+Welcome to the repository for my personal website!  
 
-Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
+This project is based on the [Contrast theme](https://github.com/niklasbuschmann/contrast) and highlights my work, projects, and achievements.  
 
-## Features
+## Installation  
 
- - supports dark mode on macOS Mojave
- - optional sidebar
- - MathJax support
- - no external ressources
- - included archive page
- - supports pagination
- - feed generation
- - responsive
- - syntax highlighting
- - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/)
+1. Fork this repository.  
+2. Customize the `_config.yml` file.  
+3. Deploy with [GitHub Pages](https://pages.github.com/).  
 
-## Based on
+## Features  
 
-- [Hyde](https://github.com/poole/hyde)
-- [Minima](https://github.com/jekyll/minima)
-- [Lagrange](https://github.com/LeNPaul/Lagrange)
-- [Font Awesome](http://fontawesome.io/)
-- [KaTeX](https://katex.org/)
-- [Pygments](https://github.com/richleland/pygments-css)
+- Dark mode support (macOS Mojave and above).  
+- Responsive design.  
+- Archive and pagination.  
+- MathJax/KaTeX for equations.  
+- Syntax highlighting.  
+- Optional sidebar and comment integration.  
 
-## Installation (jekyll-remote-theme method)
+## Config Example  
 
-You can use this theme with the `jekyll-remote-theme` plugin. Just create an empty repo, copy over the `index.html` file and add this to your `_config.yml`:
+Your `_config.yml` could look like this:  
 
 ```yaml
-remote_theme: niklasbuschmann/contrast@v2.11
-
-plugins:
-  - jekyll-remote-theme
-```
-
-Note: to enable icons you also need to copy over the `_data` folder.
-
-## Config
-
-Your `_config.yml` could for example look like this:
-
-```yaml
-title: "Blog Title"
-author: "Blog Author"
-description: "My personal blog about ... something"
-permalink: /:title/
+title: "Alexandru's Portfolio"
+author: "Alexandru"
+description: "Showcasing my work, projects, and achievements"
 lang: "en"
-excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
+show_excerpts: true
+show_sidebar: true
 
-# Layout
+navigation:
+  - {file: "index.html", title: "Home"}
+  - {file: "about.md", title: "About"}
 
-show_excerpts: true        # show article excerpts on the home page
-show_frame: true           # adds a gray frame to the site
-show_sidebar: false        # show a sidebar instead of the usual header
-
-# Menu
-
-navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
-
-external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
-
-comments:
-#  disqus_shortname: ""    # see https://disqus.com/
-#  isso_domain: ""         # see https://posativ.org/isso/
-
-plugins:
- - jekyll-feed
-
-```
-
-## MathJax
-
-Contrast comes preinstalled with a leightweight alternative to MathJax called [KaTeX](https://katex.org/). To display equations in a post simply set `mathjax: true` in the article's front matter.
-
-## License
-
-[public domain](http://unlicense.org/)
-
-## Screenshots
-
-![screenshot](https://user-images.githubusercontent.com/4943215/109431850-cd711780-7a08-11eb-8601-2763f2ee6bb4.png)
-
-![screenshot](https://user-images.githubusercontent.com/4943215/109431832-b6cac080-7a08-11eb-9c5e-a058680c23a1.png)
-
-![screenshot](https://user-images.githubusercontent.com/4943215/73125194-5f0b8b80-3fa4-11ea-805c-8387187503ad.png)
+external:
+  - {title: GitHub, icon: github, url: "https://github.com/6cox9"}
+  - {title: LinkedIn, icon: linkedin, url: "https://linkedin.com/in/alexandru-coca"}x
